@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@keyframes treme{
+    0%{
+        margin-left: .5rem;
+    }
+    20%{
+        margin-left:0
+    }
+
+    30%{
+        margin-right: .5rem;
+    }
+    40%{
+        margin-right: 0;
+    }
+    50%{
+        margin-left: .5rem;
+    }
+    60%{
+        margin-left:0
+    }
+    70%{
+        margin-left:0.5rem  
+    }
+    85%{
+        margin-right: .5rem;
+    }
+    100%{
+        margin-right: 0;
+    }
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+@keyframes up{
+    0% {
+        transform: translateY(100px) scale(0.1); 
+      }
+      100% {
+        transform: none
+      }
+}
+
+body{
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    
+}
+
+main{
+    background-color: #E6E6E6;
+    box-shadow: 0 2.0rem 5.0rem 0 #000000cc;
+    padding: 4rem 6rem 6rem;
+    width: min(42.8rem, 90%);
+    margin-top:-12rem;
+}
+
+h1{
+    color: #34355B;
+    font-weight: 800;
+    font-family: "Montserrat" sans-serif;
+    font-size: 2.4rem;
+}
+
+p{
+    font-family: 'DM Sans', sans-serif;
+    color: #34355B;
+    font-size: 1.6rem;
+}
+
+div{
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:2.0rem;
+    
+}
+
+button{
+    border:none;
+    cursor: pointer;
+    
+}
+
+#cookie{
+    background-color: #E6E6E6;
+    width: 30rem;
+}
+
+#cookie:hover{
+    animation: treme .4s;
+}
+
+
+
+#back{
+    padding: 1.6rem;
+    border-radius: 4px;
+    background-color: #FF9500;
+    color:white;
+    font-weight: 700;
+    
+}
+
+#note{
+   background-color:#E4EDF1;
+   padding: 1rem;
+   width: 27rem;
+   box-shadow: 0.2rem .2rem .2rem 0 #55555580;
+   animation: up 1s forwards;
+
+}
+
+.content2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2.7rem;
+}
+
+.mensage{
+    font-family: 'Dancing Script', cursive;
+    
+    
+}
+.hide{
+    display:none
+}
+
+
+
